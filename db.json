@@ -1,0 +1,44 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "task": "Bangun Pagi",
+      "complete": true
+    },
+    {
+      "id": 2,
+      "task": "solat subuh",
+      "complete": true
+    },
+    {
+      "id": 3,
+      "task": "mandi yang bersih",
+      "complete": true
+    },
+    {
+      "id": 4,
+      "task": "makan nasi",
+      "complete": true
+    },
+    {
+      "id": 5,
+      "task": "kampus jam 7.30",
+      "complete": true
+    },
+    {
+      "id": 6,
+      "task": "makan siang",
+      "complete": true
+    },
+    {
+      "id": 7,
+      "task": "solat zuhur",
+      "complete": true
+    },
+    {
+      "id": 8,
+      "task": "pulang kuliah",
+      "complete": true
+    }
+  ]
+}
