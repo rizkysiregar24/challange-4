@@ -9,11 +9,11 @@ const Tambah = () => {
  function tambahTodo()
     {
       axios
-        .post(`http://localhost:3000/todos`, {
+        .post(`https://fake-api-coba.herokuapp.com/todos`, {
           task: nama,
         })
         .then(() => {
-           navigasi("/");
+          navigasi("/");
         });
     }
   return (

@@ -14,7 +14,7 @@ const Data = () => {
 
   function ADDuser(e) {
     axios
-      .post(`http://localhost:3000/users`, {
+      .post(`https://fake-api-coba.herokuapp.com/todos`, {
         name: nama,
       })
       .then((response) => setRefetch(true));
@@ -23,7 +23,7 @@ const Data = () => {
   function UbahData(e) {
     e.preventDefault();
     axios
-      .patch(`http://localhost:3000/users/${id}`, {
+      .patch(`https://fake-api-coba.herokuapp.com/todos/${id}`, {
         name: nama,
       })
       .then(() => {
@@ -34,11 +34,11 @@ const Data = () => {
   }
 
   function handleHapusdata(id) {
-    axios.delete(`http://localhost:3000/todos/${id}`).then((response) => setRefetch(true));
+    axios.delete(`https://fake-api-coba.herokuapp.com/todos/${id}`).then((response) => setRefetch(true));
   }
 
   function getUsers() {
-    axios.get("http://localhost:3000/todos").then((response) => {
+    axios.get("https://fake-api-coba.herokuapp.com/todos").then((response) => {
       setData(response.data);
       setRefetch(false);
     });
@@ -112,11 +112,11 @@ const Data = () => {
                           checked={user.complete}
                           onChange={() => {
                             axios
-                              .patch(`http://localhost:3000/todos/${user.id}`, {
+                              .patch(`https://fake-api-coba.herokuapp.com/todos/${user.id}`, {
                                 complete: !user.complete,
                               })
                               .then(() => {
-                                setRefetch(true)
+                                setRefetch(true);
                               }); 
                            }}
                         />
